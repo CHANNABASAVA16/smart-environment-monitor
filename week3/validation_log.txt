@@ -1,0 +1,9 @@
+Week 3 validation - deterministic host-side logic checks
+-------------------------------------------------------
+PASS | TIM-01 sampling interval | buggy samples=20 at 500 ms; fixed samples=5 at 2000 ms
+PASS | THR-01 exact temperature boundary | 35.0 C is missed by '>' but detected by '>='
+PASS | THR-02 exact humidity boundary | 80.0 % is missed by '>' but detected by '>='
+PASS | ERR-01 invalid reading handling | NaN becomes ERROR; valid sample remains processable
+PASS | OPT-01 monitoring load | sampling events reduced from 20 to 5 in 10 s (75.0% fewer events)
+-------------------------------------------------------
+All tests passed: True
